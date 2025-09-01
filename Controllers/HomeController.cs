@@ -1,7 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using mvc.Models;
-using MySql.Data.MySqlClient;
 
 namespace mvc.Controllers
 {
@@ -16,23 +15,7 @@ namespace mvc.Controllers
 
         public IActionResult Index()
         {
-            string message;
-            var bancoDados = new DataBase();
-
-            try
-            {
-                using (MySqlConnection conn = bancoDados.GetConnection())
-                {
-                    conn.Open();
-                    message = "Finalmente esse trem deu certo";
-                }
-            }
-            catch (Exception ex)
-            {
-                message = "Não deu certo: " + ex.Message;
-            }
-
-            ViewBag.DatabaseMessage = message;
+            ViewBag.Message = "essa merda deu certo";
             return View();
         }
 
