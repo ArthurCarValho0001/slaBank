@@ -1,0 +1,11 @@
+﻿@* Views/Account/Login.cshtml *@
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h2>Login</h2>
+<form asp-action="Login" method="post">
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="senha" placeholder="Senha" required>
+    <button type="submit">Entrar</button>
+</form>
