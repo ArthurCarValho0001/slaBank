@@ -1,0 +1,11 @@
+# Arquivos do Visual Studio / VS Code
+.vs/
+bin/
+obj/
+*.user
+*.suo
+
+# Configurações locais e secrets
+appsettings.Development.json
+secrets.json
+
