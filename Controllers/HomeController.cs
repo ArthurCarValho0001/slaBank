@@ -8,28 +8,30 @@ namespace mvc.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly DataBase _db;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, DataBase db)
         {
             _logger = logger;
+            _db = db;
         }
 
         public IActionResult Index()
         {
             string message;
-            var bancoDados = new DataBase();
 
             try
             {
-                using (MySqlConnection conn = bancoDados.GetConnection())
+                using (MySqlConnection conn = _db.GetConnection())
                 {
                     conn.Open();
-                    message = "Finalmente esse trem deu certo";
+                    message = "✅ Conexão com o banco de dados realizada com sucesso!";
                 }
             }
             catch (Exception ex)
             {
-                message = "Não deu certo: " + ex.Message;
+                message = "❌ Falha ao conectar: " + ex.Message;
+                _logger.LogError(ex, "Erro ao conectar ao banco de dados");
             }
 
             ViewBag.DatabaseMessage = message;
@@ -44,7 +46,10 @@ namespace mvc.Controllers
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(new ErrorViewModel
+            {
+                RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
+            });
         }
     }
 }

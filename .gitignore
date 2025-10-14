@@ -1,16 +1,11 @@
-# Visual Studio
+# Arquivos do Visual Studio / VS Code
 .vs/
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
-
-# Build results
 bin/
 obj/
-Debug/
-Release/
+*.user
+*.suo
 
-# Others
-*.log
-*.tmp
+# Configurações locais e secrets
+appsettings.Development.json
+secrets.json
+
