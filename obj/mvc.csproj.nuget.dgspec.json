@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo K14\\OneDrive\\Documentos\\mvc\\mvc.csproj": {}
+    "C:\\Users\\arthu\\source\\repos\\ArthurCarValho0001\\slaBank\\mvc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo K14\\OneDrive\\Documentos\\mvc\\mvc.csproj": {
+    "C:\\Users\\arthu\\source\\repos\\ArthurCarValho0001\\slaBank\\mvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo K14\\OneDrive\\Documentos\\mvc\\mvc.csproj",
+        "projectUniqueName": "C:\\Users\\arthu\\source\\repos\\ArthurCarValho0001\\slaBank\\mvc.csproj",
         "projectName": "mvc",
-        "projectPath": "C:\\Users\\Lenovo K14\\OneDrive\\Documentos\\mvc\\mvc.csproj",
-        "packagesPath": "C:\\Users\\Lenovo K14\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo K14\\OneDrive\\Documentos\\mvc\\obj\\",
+        "projectPath": "C:\\Users\\arthu\\source\\repos\\ArthurCarValho0001\\slaBank\\mvc.csproj",
+        "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\arthu\\source\\repos\\ArthurCarValho0001\\slaBank\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo K14\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -74,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
